@@ -95,7 +95,7 @@ if __name__ == "__main__":
         myElem_new6 = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH,
                                                                                        "/html/body/app-root/div/close-shipment/close-shipment-view/ngds-layout/div/aside/filter-sidebar/form/div/div[3]/div/ngds-autocomplete-search-multi/angular2-multiselect/div/div[2]/div[3]/div[2]/input")))
         myElem_new6.send_keys(
-            "RWS TLB c/o Raymarine UK")  # "RWS TLB c/o Welch Allyn Ltd."  "RWS TLB c/o Penumbra" "RWS TLB c/o KCI Manufacturing"
+            "Client_Ref")  
         myElem_new6.click()
         sleep(2)
         print("kalo edo1")
@@ -153,7 +153,7 @@ if __name__ == "__main__":
         image_file = open("C:/Users/SRV/PycharmProjects/MAILSMTP1/Logo.png", 'rb').read()
         encoded_image = base64.b64encode(image_file).decode("utf-8")
 
-        from_email = "TSTDonotreply@nl.rhenus.com"
+        from_email = "TSTDonotreply@nl.fmail.com"
         to_emails = ["receipient1@fmail.com", "receipient2@fmail.com", "receipient3@fmail.com",
                      "receipient4@fmail.com"]
         cc_emails = ["receipient_cc@fmail.com"]
